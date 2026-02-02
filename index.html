@@ -11,42 +11,42 @@
         <fieldset>
             <legend>Meu Formulario</legend>
             <div><input type="text" name="nome" placeholder="Digite o seu nome: "></div>
-            <div><input type="text" name="nome" placeholder="Digite o seu e-mail: "></div>
+            <div><input type="text" name="email" placeholder="Digite o seu e-mail: "></div>
             <div>
                 <select name="lista">
                     <option disabled selected>Qual a sua idade</option>
-                    <option>-20</option>
-                    <option>+20</option>
-                    <option>+30</option>
+                    <option value="20">-20</option>
+                    <option value="+20">+20</option>
+                    <option value="+30">+30</option>
                 </select>
             </div>
             <h2>Qual a sua cidade?</h2>
             <div class="input">
             <div> 
-                <input type="radio" name="cidade" value=" "><span>Uberaba</span>
+                <input type="radio" name="cidade" value="Uberaba"><span>Uberaba</span>
             </div>
             <div>
-                <input type="radio" name="cidade" value=" "><span>Uberlandia</span>
+                <input type="radio" name="cidade" value="Uberlandia"><span>Uberlandia</span>
             </div>
             <div>
-                <input type="radio" name="cidade" value=" "><span>Rio de Janeiro</span>
+                <input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span>
             </div>
             </div>
 
             <h2>O que voce gosta de comer?</h2>
             <div class="input">
             <div> 
-                <input type="checkbox" name="comida" value=" "><span>Strogonoff</span>
+                <input type="checkbox" name="comida[]" value="Strogonoff"><span>Strogonoff</span>
             </div>
             <div>
-                <input type="checkbox" name="comida" value=" "><span>Lasanha</span>
+                <input type="checkbox" name="comida[]" value="Lasanha"><span>Lasanha</span>
             </div>
             <div>
-                <input type="checkbox" name="comida" value=" "><span>Pizza</span>
+                <input type="checkbox" name="comida[]" value="Pizza"><span>Pizza</span>
             </div>
             </div>
                 <div>
-                    <textarea placeholder="Possui alguma observação?"></textarea>
+                    <textarea name="observação" placeholder="Possui alguma observação?"></textarea>
                 </div>
                 <div>
                     <input type="submit" name="acao" value="Enviar Formulario">
