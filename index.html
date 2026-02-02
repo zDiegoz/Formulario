@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
+
 <body>
     <form>
         <fieldset>
@@ -22,36 +24,43 @@
             </div>
             <h2>Qual a sua cidade?</h2>
             <div class="input">
-            <div> 
-                <input type="radio" name="cidade" value="Uberaba"><span>Uberaba</span>
-            </div>
-            <div>
-                <input type="radio" name="cidade" value="Uberlandia"><span>Uberlandia</span>
-            </div>
-            <div>
-                <input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span>
-            </div>
+                <div>
+                    <input type="radio" name="cidade" value="Uberaba"><span>Uberaba</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade" value="Uberlandia"><span>Uberlandia</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade" value="São Paulo"><span>São Paulo</span>
+                </div>
             </div>
 
             <h2>O que voce gosta de comer?</h2>
             <div class="input">
-            <div> 
-                <input type="checkbox" name="comida[]" value="Strogonoff"><span>Strogonoff</span>
-            </div>
-            <div>
-                <input type="checkbox" name="comida[]" value="Lasanha"><span>Lasanha</span>
-            </div>
-            <div>
-                <input type="checkbox" name="comida[]" value="Pizza"><span>Pizza</span>
-            </div>
-            </div>
                 <div>
-                    <textarea name="observação" placeholder="Possui alguma observação?"></textarea>
+                    <input type="checkbox" name="comida[]" value="Strogonoff"><span>Strogonoff</span>
                 </div>
                 <div>
-                    <input type="submit" name="acao" value="Enviar Formulario">
+                    <input type="checkbox" name="comida[]" value="Lasanha"><span>Lasanha</span>
                 </div>
+                <div>
+                    <input type="checkbox" name="comida[]" value="Pizza"><span>Pizza</span>
+                </div>
+            </div>
+            <div>
+                <textarea name="observação" placeholder="Possui alguma observação?"></textarea>
+            </div>
+            <form>
+                <div class="doc">
+                    <label for="file">Documento de Identificação</label>
+                    <input id="file" type="file" name="file">
+                </div>
+            </form>
+            <div>
+                <input type="submit" name="acao" value="Enviar Formulario">
+            </div>
         </fieldset>
     </form>
 </body>
+
 </html>
