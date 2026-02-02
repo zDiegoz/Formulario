@@ -54,6 +54,7 @@ form select{
 	display: inline-block;
 	border:1px solid #ccc;
     border-radius: 10px;
+	cursor: pointer;
 }
 
 /*
